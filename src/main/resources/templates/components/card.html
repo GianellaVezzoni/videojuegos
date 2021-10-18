@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+  <div th:fragment="_card" class="card" th:each="videojuego: ${videojuegos}" style=" flex: auto; margin-right: 15px; margin-bottom: 25px; margin-left: 15px; width: 23%;">
+    <img th:src="@{'/imagenes/'} + ${videojuego.imagen}" class="card-img-top" alt="Imagen del videojuego" style="width: auto;
+height: 200px;">
+    <div class="card-body">
+      <h5 class="card-title" th:text="${videojuego.titulo}">Nombre producto</h5>
+      <p class="card-text">Precio: $<span class="card-text" th:text="${videojuego.precio}">valor</span></p>
+    </div>
+    <div class="card-footer">
+      <a th:href="@{detalle/{id}(id=${videojuego.id})}" class="btn btn-primary"> Ver producto </a>
+    </div>
+  </div>
+</body>
+</html>

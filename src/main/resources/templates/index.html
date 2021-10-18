@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Videojuegos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+<nav th:replace="components/navbar :: nav_bar"></nav>
+<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(https://images5.alphacoders.com/337/337943.jpg);
+    background-size: cover;
+    height: 600px;">
+    <div style="margin-top: 16%;
+    margin-left: 41%;
+    position: absolute;">
+        <h3 style="color:#FFF;font-size: 36px;">¡Bienvenido/a!</h3>
+        <div style="margin-top:3%;">
+            <a style="margin-right: 20%;" class="btn btn-warning" href="/inicio">Videojuegos</a>
+            <a class="btn btn-warning" href="/crud">CRUD</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
