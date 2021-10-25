@@ -9,4 +9,4 @@ Se utilizaron las siguientes dependencias:
 - MySQL Driver
 - Validaciones
 
-Video de youtube con la explicación de la estructura, funcionamiento y vista del proyecto: https://youtu.be/PzvC7qv6CLY
+Video de youtube con la explicación de la estructura, funcionamiento y vista del proyecto: https://youtu.be/U5ZzKpLaV7A
