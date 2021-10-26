@@ -1,3 +1,5 @@
+Gianella Vezzoni 2do 4ta
+
 CRUD de videojuegos.
 Para poder ejecutar el proyecto, se debe tener xampp levantado y una conexión establecida en el cliente SQL.
 
